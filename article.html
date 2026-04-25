@@ -1,446 +1,430 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="ja">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2575.7">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- ========================================
+       SEO：ここを記事ごとに書き換える
+  ======================================== -->
+  <title>【2026年最新】おすすめ○○ランキング5選｜選び方も解説</title>
+  <meta name="description" content="○○を選ぶポイントと2026年おすすめ5選を徹底解説。初心者でもわかりやすく比較しました。">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --accent: #1a6fd4;
+      --accent-light: #e8f1fc;
+      --text: #1a1a1a;
+      --muted: #666;
+      --border: #e2e2e2;
+      --bg: #f7f8fa;
+      --white: #fff;
+    }
+
+    body {
+      font-family: 'Noto Sans JP', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.8;
+      font-size: 16px;
+    }
+
+    /* ===== HEADER ===== */
+    header {
+      background: var(--white);
+      border-bottom: 1px solid var(--border);
+      padding: 0 1rem;
+    }
+    .header-inner {
+      max-width: 800px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 56px;
+    }
+    .site-name {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--accent);
+      text-decoration: none;
+    }
+    nav a {
+      font-size: 0.85rem;
+      color: var(--muted);
+      text-decoration: none;
+      margin-left: 1.2rem;
+    }
+    nav a:hover { color: var(--accent); }
+
+    /* ===== LAYOUT ===== */
+    .page-wrap {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+      display: grid;
+      grid-template-columns: 1fr 260px;
+      gap: 2rem;
+      align-items: start;
+    }
+    @media (max-width: 680px) {
+      .page-wrap { grid-template-columns: 1fr; }
+      .sidebar { display: none; }
+    }
+
+    /* ===== ARTICLE ===== */
+    article {
+      background: var(--white);
+      border-radius: 12px;
+      padding: 2rem;
+    }
+
+    .article-meta {
+      font-size: 0.8rem;
+      color: var(--muted);
+      margin-bottom: 0.75rem;
+    }
+    .article-meta span { margin-right: 1rem; }
+
+    article h1 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      line-height: 1.4;
+      margin-bottom: 1rem;
+    }
+
+    /* 目次 */
+    .toc {
+      background: var(--accent-light);
+      border-left: 4px solid var(--accent);
+      border-radius: 0 8px 8px 0;
+      padding: 1rem 1.25rem;
+      margin: 1.5rem 0;
+    }
+    .toc-title {
+      font-weight: 700;
+      font-size: 0.9rem;
+      margin-bottom: 0.5rem;
+      color: var(--accent);
+    }
+    .toc ol { padding-left: 1.2rem; }
+    .toc li { font-size: 0.85rem; margin: 0.25rem 0; }
+    .toc a { color: var(--accent); text-decoration: none; }
+    .toc a:hover { text-decoration: underline; }
+
+    /* 見出し */
+    article h2 {
+      font-size: 1.2rem;
+      font-weight: 700;
+      border-left: 4px solid var(--accent);
+      padding-left: 0.75rem;
+      margin: 2rem 0 1rem;
+    }
+    article h3 {
+      font-size: 1rem;
+      font-weight: 700;
+      margin: 1.5rem 0 0.5rem;
+      color: var(--accent);
+    }
+
+    article p { margin-bottom: 1rem; }
+
+    /* ランキングカード */
+    .rank-card {
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 1.25rem;
+      margin: 1rem 0;
+      display: flex;
+      gap: 1rem;
+      align-items: flex-start;
+    }
+    .rank-num {
+      min-width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: var(--accent);
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 1rem;
+      flex-shrink: 0;
+    }
+    .rank-num.gold   { background: #d4a017; }
+    .rank-num.silver { background: #8a8a8a; }
+    .rank-num.bronze { background: #a0522d; }
+    .rank-body h3 { margin: 0 0 0.25rem; font-size: 1rem; color: var(--text); }
+    .rank-body p  { font-size: 0.875rem; color: var(--muted); margin: 0; }
+
+    /* ================================================
+       ★ アフィリエイトリンク（ここに広告タグを貼る）
+    ================================================ */
+    .affiliate-btn {
+      display: block;
+      text-align: center;
+      background: #e85d24;
+      color: #fff;
+      padding: 0.75rem 1.5rem;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 0.95rem;
+      margin-top: 0.75rem;
+      transition: opacity 0.2s;
+    }
+    .affiliate-btn:hover { opacity: 0.85; }
+    .affiliate-btn.amazon { background: #ff9900; color: #111; }
+    .affiliate-btn.rakuten { background: #bf0000; }
+
+    /* ================================================
+       ★ Google AdSense 広告枠
+       （実際のAdSenseコードはここに貼り付ける）
+    ================================================ */
+    .ad-unit {
+      background: #f0f0f0;
+      border: 1px dashed #ccc;
+      border-radius: 8px;
+      padding: 1rem;
+      text-align: center;
+      font-size: 0.75rem;
+      color: #999;
+      margin: 1.5rem 0;
+    }
+
+    /* まとめ表 */
+    .comparison-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.875rem;
+      margin: 1rem 0;
+    }
+    .comparison-table th {
+      background: var(--accent);
+      color: #fff;
+      padding: 0.6rem 0.75rem;
+      text-align: left;
+    }
+    .comparison-table td {
+      padding: 0.6rem 0.75rem;
+      border-bottom: 1px solid var(--border);
+    }
+    .comparison-table tr:nth-child(even) td { background: var(--accent-light); }
+
+    /* ===== SIDEBAR ===== */
+    .sidebar { display: flex; flex-direction: column; gap: 1.25rem; }
+
+    .sidebar-card {
+      background: var(--white);
+      border-radius: 10px;
+      padding: 1.25rem;
+    }
+    .sidebar-card h4 {
+      font-size: 0.9rem;
+      font-weight: 700;
+      margin-bottom: 0.75rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 2px solid var(--accent);
+    }
+    .sidebar-card ul { list-style: none; }
+    .sidebar-card li { font-size: 0.85rem; padding: 0.35rem 0; border-bottom: 1px solid var(--border); }
+    .sidebar-card li:last-child { border-bottom: none; }
+    .sidebar-card a { color: var(--text); text-decoration: none; }
+    .sidebar-card a:hover { color: var(--accent); }
+
+    /* サイドバー広告枠 */
+    .sidebar-ad {
+      background: #f0f0f0;
+      border: 1px dashed #ccc;
+      border-radius: 8px;
+      padding: 1.5rem 1rem;
+      text-align: center;
+      font-size: 0.75rem;
+      color: #999;
+      min-height: 250px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* ===== FOOTER ===== */
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.8rem;
+      color: var(--muted);
+      margin-top: 2rem;
+    }
   </style>
 </head>
 <body>
-<p class="p1">&lt;!DOCTYPE html&gt;</p>
-<p class="p1">&lt;html lang="ja"&gt;</p>
-<p class="p1">&lt;head&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta charset="UTF-8"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;!-- ========================================</p>
-<p class="p1"><span class="Apple-converted-space">       </span>SEO：ここを記事ごとに書き換える</p>
-<p class="p1"><span class="Apple-converted-space">  </span>======================================== --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;title&gt;【2026年最新】おすすめ○○ランキング5選｜選び方も解説&lt;/title&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta name="description" content="○○を選ぶポイントと2026年おすすめ5選を徹底解説。初心者でもわかりやすく比較しました。"&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;link rel="preconnect" href="https://fonts.googleapis.com"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&amp;display=swap" rel="stylesheet"&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;style&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>:root {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>--accent: #1a6fd4;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>--accent-light: #e8f1fc;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>--text: #1a1a1a;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>--muted: #666;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>--border: #e2e2e2;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>--bg: #f7f8fa;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>--white: #fff;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>body {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>font-family: 'Noto Sans JP', sans-serif;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>background: var(--bg);</p>
-<p class="p1"><span class="Apple-converted-space">      </span>color: var(--text);</p>
-<p class="p1"><span class="Apple-converted-space">      </span>line-height: 1.8;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>font-size: 16px;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>/* ===== HEADER ===== */</p>
-<p class="p1"><span class="Apple-converted-space">    </span>header {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>background: var(--white);</p>
-<p class="p1"><span class="Apple-converted-space">      </span>border-bottom: 1px solid var(--border);</p>
-<p class="p1"><span class="Apple-converted-space">      </span>padding: 0 1rem;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.header-inner {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>max-width: 800px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>margin: 0 auto;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>display: flex;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>align-items: center;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>justify-content: space-between;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>height: 56px;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.site-name {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>font-size: 1.1rem;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>font-weight: 700;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>color: var(--accent);</p>
-<p class="p1"><span class="Apple-converted-space">      </span>text-decoration: none;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>nav a {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>font-size: 0.85rem;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>color: var(--muted);</p>
-<p class="p1"><span class="Apple-converted-space">      </span>text-decoration: none;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>margin-left: 1.2rem;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>nav a:hover { color: var(--accent); }</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>/* ===== LAYOUT ===== */</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.page-wrap {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>max-width: 800px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>margin: 2rem auto;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>padding: 0 1rem;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>display: grid;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>grid-template-columns: 1fr 260px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>gap: 2rem;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>align-items: start;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>@media (max-width: 680px) {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>.page-wrap { grid-template-columns: 1fr; }</p>
-<p class="p1"><span class="Apple-converted-space">      </span>.sidebar { display: none; }</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>/* ===== ARTICLE ===== */</p>
-<p class="p1"><span class="Apple-converted-space">    </span>article {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>background: var(--white);</p>
-<p class="p1"><span class="Apple-converted-space">      </span>border-radius: 12px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>padding: 2rem;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>.article-meta {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>font-size: 0.8rem;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>color: var(--muted);</p>
-<p class="p1"><span class="Apple-converted-space">      </span>margin-bottom: 0.75rem;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.article-meta span { margin-right: 1rem; }</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>article h1 {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>font-size: 1.5rem;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>font-weight: 700;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>line-height: 1.4;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>margin-bottom: 1rem;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>/* 目次 */</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.toc {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>background: var(--accent-light);</p>
-<p class="p1"><span class="Apple-converted-space">      </span>border-left: 4px solid var(--accent);</p>
-<p class="p1"><span class="Apple-converted-space">      </span>border-radius: 0 8px 8px 0;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>padding: 1rem 1.25rem;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>margin: 1.5rem 0;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.toc-title {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>font-weight: 700;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>font-size: 0.9rem;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>margin-bottom: 0.5rem;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>color: var(--accent);</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.toc ol { padding-left: 1.2rem; }</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.toc li { font-size: 0.85rem; margin: 0.25rem 0; }</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.toc a { color: var(--accent); text-decoration: none; }</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.toc a:hover { text-decoration: underline; }</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>/* 見出し */</p>
-<p class="p1"><span class="Apple-converted-space">    </span>article h2 {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>font-size: 1.2rem;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>font-weight: 700;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>border-left: 4px solid var(--accent);</p>
-<p class="p1"><span class="Apple-converted-space">      </span>padding-left: 0.75rem;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>margin: 2rem 0 1rem;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>article h3 {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>font-size: 1rem;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>font-weight: 700;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>margin: 1.5rem 0 0.5rem;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>color: var(--accent);</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>article p { margin-bottom: 1rem; }</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>/* ランキングカード */</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.rank-card {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>border: 1px solid var(--border);</p>
-<p class="p1"><span class="Apple-converted-space">      </span>border-radius: 10px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>padding: 1.25rem;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>margin: 1rem 0;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>display: flex;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>gap: 1rem;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>align-items: flex-start;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.rank-num {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>min-width: 40px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>height: 40px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>border-radius: 50%;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>background: var(--accent);</p>
-<p class="p1"><span class="Apple-converted-space">      </span>color: #fff;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>display: flex;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>align-items: center;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>justify-content: center;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>font-weight: 700;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>font-size: 1rem;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>flex-shrink: 0;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.rank-num.gold <span class="Apple-converted-space">  </span>{ background: #d4a017; }</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.rank-num.silver { background: #8a8a8a; }</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.rank-num.bronze { background: #a0522d; }</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.rank-body h3 { margin: 0 0 0.25rem; font-size: 1rem; color: var(--text); }</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.rank-body p<span class="Apple-converted-space">  </span>{ font-size: 0.875rem; color: var(--muted); margin: 0; }</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>/* ================================================</p>
-<p class="p1"><span class="Apple-converted-space">       </span>★ アフィリエイトリンク（ここに広告タグを貼る）</p>
-<p class="p1"><span class="Apple-converted-space">    </span>================================================ */</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.affiliate-btn {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>display: block;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>text-align: center;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>background: #e85d24;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>color: #fff;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>padding: 0.75rem 1.5rem;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>border-radius: 8px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>text-decoration: none;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>font-weight: 700;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>font-size: 0.95rem;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>margin-top: 0.75rem;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>transition: opacity 0.2s;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.affiliate-btn:hover { opacity: 0.85; }</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.affiliate-btn.amazon { background: #ff9900; color: #111; }</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.affiliate-btn.rakuten { background: #bf0000; }</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>/* ================================================</p>
-<p class="p1"><span class="Apple-converted-space">       </span>★ Google AdSense 広告枠</p>
-<p class="p1"><span class="Apple-converted-space">       </span>（実際のAdSenseコードはここに貼り付ける）</p>
-<p class="p1"><span class="Apple-converted-space">    </span>================================================ */</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.ad-unit {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>background: #f0f0f0;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>border: 1px dashed #ccc;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>border-radius: 8px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>padding: 1rem;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>text-align: center;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>font-size: 0.75rem;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>color: #999;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>margin: 1.5rem 0;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>/* まとめ表 */</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.comparison-table {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>width: 100%;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>border-collapse: collapse;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>font-size: 0.875rem;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>margin: 1rem 0;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.comparison-table th {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>background: var(--accent);</p>
-<p class="p1"><span class="Apple-converted-space">      </span>color: #fff;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>padding: 0.6rem 0.75rem;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>text-align: left;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.comparison-table td {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>padding: 0.6rem 0.75rem;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>border-bottom: 1px solid var(--border);</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.comparison-table tr:nth-child(even) td { background: var(--accent-light); }</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>/* ===== SIDEBAR ===== */</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.sidebar { display: flex; flex-direction: column; gap: 1.25rem; }</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>.sidebar-card {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>background: var(--white);</p>
-<p class="p1"><span class="Apple-converted-space">      </span>border-radius: 10px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>padding: 1.25rem;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.sidebar-card h4 {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>font-size: 0.9rem;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>font-weight: 700;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>margin-bottom: 0.75rem;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>padding-bottom: 0.5rem;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>border-bottom: 2px solid var(--accent);</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.sidebar-card ul { list-style: none; }</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.sidebar-card li { font-size: 0.85rem; padding: 0.35rem 0; border-bottom: 1px solid var(--border); }</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.sidebar-card li:last-child { border-bottom: none; }</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.sidebar-card a { color: var(--text); text-decoration: none; }</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.sidebar-card a:hover { color: var(--accent); }</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>/* サイドバー広告枠 */</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.sidebar-ad {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>background: #f0f0f0;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>border: 1px dashed #ccc;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>border-radius: 8px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>padding: 1.5rem 1rem;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>text-align: center;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>font-size: 0.75rem;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>color: #999;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>min-height: 250px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>display: flex;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>align-items: center;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>justify-content: center;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>/* ===== FOOTER ===== */</p>
-<p class="p1"><span class="Apple-converted-space">    </span>footer {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>text-align: center;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>padding: 2rem 1rem;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>font-size: 0.8rem;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>color: var(--muted);</p>
-<p class="p1"><span class="Apple-converted-space">      </span>margin-top: 2rem;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/style&gt;</p>
-<p class="p1">&lt;/head&gt;</p>
-<p class="p1">&lt;body&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;!-- ===== ヘッダー ===== --&gt;</p>
-<p class="p1">&lt;header&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="header-inner"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;a class="site-name" href="index.html"&gt;サイト名&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;nav&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;a href="#"&gt;ホーム&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;a href="#"&gt;カテゴリー&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;a href="#"&gt;プロフィール&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/nav&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
-<p class="p1">&lt;/header&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;!-- ===== メインコンテンツ ===== --&gt;</p>
-<p class="p1">&lt;div class="page-wrap"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;main&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;article&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="article-meta"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;span&gt;📅 2026年4月25日&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;span&gt;✏️ 執筆者名&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;h1&gt;【2026年最新】おすすめ○○ランキング5選｜選び方も徹底解説&lt;/h1&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;!-- ================================================</p>
-<p class="p1"><span class="Apple-converted-space">           </span>★ 記事上 広告（AdSense or ASP バナー）</p>
-<p class="p1"><span class="Apple-converted-space">           </span>ここにAdSenseの&lt;script&gt;タグを貼る</p>
-<p class="p1"><span class="Apple-converted-space">      </span>================================================ --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="ad-unit"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>【広告】ここにGoogle AdSenseのコードを貼る</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;!-- 目次 --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="toc"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="toc-title"&gt;目次&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;ol&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;li&gt;&lt;a href="#how-to-choose"&gt;○○の選び方3つのポイント&lt;/a&gt;&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;li&gt;&lt;a href="#ranking"&gt;おすすめランキング TOP5&lt;/a&gt;&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;li&gt;&lt;a href="#comparison"&gt;比較表&lt;/a&gt;&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;li&gt;&lt;a href="#summary"&gt;まとめ&lt;/a&gt;&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/ol&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;p&gt;○○を選ぶとき、どれにすればいいか迷っていませんか？この記事では実際に試した経験をもとに、2026年おすすめの5選をランキング形式で紹介します。&lt;/p&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;!-- ===== セクション1 ===== --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;h2 id="how-to-choose"&gt;○○の選び方3つのポイント&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;p&gt;購入前に確認しておきたいポイントをまとめました。&lt;/p&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;h3&gt;① ポイントA&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;p&gt;ここに説明文を書きます。読者が理解しやすいよう、具体的な例を交えると効果的です。&lt;/p&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;h3&gt;② ポイントB&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;p&gt;ここに説明文を書きます。&lt;/p&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;h3&gt;③ ポイントC&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;p&gt;ここに説明文を書きます。&lt;/p&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;!-- ===== セクション2：ランキング ===== --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;h2 id="ranking"&gt;おすすめランキング TOP5&lt;/h2&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;!-- 1位 --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="rank-card"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="rank-num gold"&gt;1&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="rank-body"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;h3&gt;商品名A&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;p&gt;商品の特徴・メリットをここに書きます。読者が「これが欲しい」と思う説明をしましょう。&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;!--</p>
-<p class="p1"><span class="Apple-converted-space">            </span>★ アフィリエイトリンクをここに貼る</p>
-<p class="p1"><span class="Apple-converted-space">            </span>例）Amazonアソシエイト → href="https://amzn.to/XXXXXXX"</p>
-<p class="p1"><span class="Apple-converted-space">                </span>A8.net → href="https://px.a8.net/XXXXXXX"</p>
-<p class="p1"><span class="Apple-converted-space">          </span>--&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;a href="#" class="affiliate-btn amazon"&gt;Amazonで見る →&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;a href="#" class="affiliate-btn rakuten"&gt;楽天で見る →&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;!-- 2位 --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="rank-card"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="rank-num silver"&gt;2&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="rank-body"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;h3&gt;商品名B&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;p&gt;商品の特徴・メリットをここに書きます。&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;a href="#" class="affiliate-btn amazon"&gt;Amazonで見る →&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;!-- 3位 --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="rank-card"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="rank-num bronze"&gt;3&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="rank-body"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;h3&gt;商品名C&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;p&gt;商品の特徴・メリットをここに書きます。&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;a href="#" class="affiliate-btn amazon"&gt;Amazonで見る →&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;!-- 記事中広告 --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="ad-unit"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>【広告】記事中のAdSenseコードをここに貼る</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;!-- ===== セクション3：比較表 ===== --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;h2 id="comparison"&gt;比較表&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;table class="comparison-table"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;thead&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;tr&gt;&lt;th&gt;商品名&lt;/th&gt;&lt;th&gt;価格&lt;/th&gt;&lt;th&gt;特徴&lt;/th&gt;&lt;th&gt;評価&lt;/th&gt;&lt;/tr&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/thead&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;tbody&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;tr&gt;&lt;td&gt;商品A&lt;/td&gt;&lt;td&gt;¥3,000&lt;/td&gt;&lt;td&gt;○○が優れている&lt;/td&gt;&lt;td&gt;★★★★★&lt;/td&gt;&lt;/tr&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;tr&gt;&lt;td&gt;商品B&lt;/td&gt;&lt;td&gt;¥2,500&lt;/td&gt;&lt;td&gt;コスパが高い&lt;/td&gt;&lt;td&gt;★★★★☆&lt;/td&gt;&lt;/tr&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;tr&gt;&lt;td&gt;商品C&lt;/td&gt;&lt;td&gt;¥1,800&lt;/td&gt;&lt;td&gt;初心者向け&lt;/td&gt;&lt;td&gt;★★★★☆&lt;/td&gt;&lt;/tr&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/tbody&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;/table&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;!-- ===== まとめ ===== --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;h2 id="summary"&gt;まとめ&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;p&gt;今回は○○おすすめ5選を紹介しました。迷ったら&lt;strong&gt;商品A&lt;/strong&gt;を選んでおけば間違いありません。&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;a href="#" class="affiliate-btn"&gt;▶ 商品Aの詳細・最安値を確認する&lt;/a&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;!-- 記事下広告 --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="ad-unit"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>【広告】記事下のAdSenseコードをここに貼る</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/article&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/main&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;!-- ===== サイドバー ===== --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;aside class="sidebar"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- サイドバー広告 --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="sidebar-ad"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>【広告】&lt;br&gt;サイドバー広告&lt;br&gt;（300×250推奨）&lt;br&gt;AdSenseコードを貼る</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- 人気記事 --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="sidebar-card"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;h4&gt;人気記事&lt;/h4&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;ul&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;li&gt;&lt;a href="#"&gt;記事タイトル1&lt;/a&gt;&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;li&gt;&lt;a href="#"&gt;記事タイトル2&lt;/a&gt;&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;li&gt;&lt;a href="#"&gt;記事タイトル3&lt;/a&gt;&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;li&gt;&lt;a href="#"&gt;記事タイトル4&lt;/a&gt;&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;/ul&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- カテゴリー --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="sidebar-card"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;h4&gt;カテゴリー&lt;/h4&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;ul&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;li&gt;&lt;a href="#"&gt;カテゴリーA&lt;/a&gt;&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;li&gt;&lt;a href="#"&gt;カテゴリーB&lt;/a&gt;&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;li&gt;&lt;a href="#"&gt;カテゴリーC&lt;/a&gt;&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;/ul&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/aside&gt;</p>
-<p class="p1">&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;!-- ===== フッター ===== --&gt;</p>
-<p class="p1">&lt;footer&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;p&gt;© 2026 サイト名 | &lt;a href="#"&gt;プライバシーポリシー&lt;/a&gt; | &lt;a href="#"&gt;お問い合わせ&lt;/a&gt;&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;p style="margin-top:0.5rem;font-size:0.75rem;"&gt;※本サイトはアフィリエイト広告を利用しています。&lt;/p&gt;</p>
-<p class="p1">&lt;/footer&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;/body&gt;</p>
-<p class="p1">&lt;/html&gt;</p>
+
+<!-- ===== ヘッダー ===== -->
+<header>
+  <div class="header-inner">
+    <a class="site-name" href="index.html">サイト名</a>
+    <nav>
+      <a href="#">ホーム</a>
+      <a href="#">カテゴリー</a>
+      <a href="#">プロフィール</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ===== メインコンテンツ ===== -->
+<div class="page-wrap">
+  <main>
+    <article>
+      <div class="article-meta">
+        <span>📅 2026年4月25日</span>
+        <span>✏️ 執筆者名</span>
+      </div>
+
+      <h1>【2026年最新】おすすめ○○ランキング5選｜選び方も徹底解説</h1>
+
+      <!-- ================================================
+           ★ 記事上 広告（AdSense or ASP バナー）
+           ここにAdSenseの<script>タグを貼る
+      ================================================ -->
+      <div class="ad-unit">
+        【広告】ここにGoogle AdSenseのコードを貼る
+      </div>
+
+      <!-- 目次 -->
+      <div class="toc">
+        <div class="toc-title">目次</div>
+        <ol>
+          <li><a href="#how-to-choose">○○の選び方3つのポイント</a></li>
+          <li><a href="#ranking">おすすめランキング TOP5</a></li>
+          <li><a href="#comparison">比較表</a></li>
+          <li><a href="#summary">まとめ</a></li>
+        </ol>
+      </div>
+
+      <p>○○を選ぶとき、どれにすればいいか迷っていませんか？この記事では実際に試した経験をもとに、2026年おすすめの5選をランキング形式で紹介します。</p>
+
+      <!-- ===== セクション1 ===== -->
+      <h2 id="how-to-choose">○○の選び方3つのポイント</h2>
+      <p>購入前に確認しておきたいポイントをまとめました。</p>
+
+      <h3>① ポイントA</h3>
+      <p>ここに説明文を書きます。読者が理解しやすいよう、具体的な例を交えると効果的です。</p>
+
+      <h3>② ポイントB</h3>
+      <p>ここに説明文を書きます。</p>
+
+      <h3>③ ポイントC</h3>
+      <p>ここに説明文を書きます。</p>
+
+      <!-- ===== セクション2：ランキング ===== -->
+      <h2 id="ranking">おすすめランキング TOP5</h2>
+
+      <!-- 1位 -->
+      <div class="rank-card">
+        <div class="rank-num gold">1</div>
+        <div class="rank-body">
+          <h3>商品名A</h3>
+          <p>商品の特徴・メリットをここに書きます。読者が「これが欲しい」と思う説明をしましょう。</p>
+          <!--
+            ★ アフィリエイトリンクをここに貼る
+            例）Amazonアソシエイト → href="https://amzn.to/XXXXXXX"
+                A8.net → href="https://px.a8.net/XXXXXXX"
+          -->
+          <a href="#" class="affiliate-btn amazon">Amazonで見る →</a>
+          <a href="#" class="affiliate-btn rakuten">楽天で見る →</a>
+        </div>
+      </div>
+
+      <!-- 2位 -->
+      <div class="rank-card">
+        <div class="rank-num silver">2</div>
+        <div class="rank-body">
+          <h3>商品名B</h3>
+          <p>商品の特徴・メリットをここに書きます。</p>
+          <a href="#" class="affiliate-btn amazon">Amazonで見る →</a>
+        </div>
+      </div>
+
+      <!-- 3位 -->
+      <div class="rank-card">
+        <div class="rank-num bronze">3</div>
+        <div class="rank-body">
+          <h3>商品名C</h3>
+          <p>商品の特徴・メリットをここに書きます。</p>
+          <a href="#" class="affiliate-btn amazon">Amazonで見る →</a>
+        </div>
+      </div>
+
+      <!-- 記事中広告 -->
+      <div class="ad-unit">
+        【広告】記事中のAdSenseコードをここに貼る
+      </div>
+
+      <!-- ===== セクション3：比較表 ===== -->
+      <h2 id="comparison">比較表</h2>
+      <table class="comparison-table">
+        <thead>
+          <tr><th>商品名</th><th>価格</th><th>特徴</th><th>評価</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>商品A</td><td>¥3,000</td><td>○○が優れている</td><td>★★★★★</td></tr>
+          <tr><td>商品B</td><td>¥2,500</td><td>コスパが高い</td><td>★★★★☆</td></tr>
+          <tr><td>商品C</td><td>¥1,800</td><td>初心者向け</td><td>★★★★☆</td></tr>
+        </tbody>
+      </table>
+
+      <!-- ===== まとめ ===== -->
+      <h2 id="summary">まとめ</h2>
+      <p>今回は○○おすすめ5選を紹介しました。迷ったら<strong>商品A</strong>を選んでおけば間違いありません。</p>
+      <a href="#" class="affiliate-btn">▶ 商品Aの詳細・最安値を確認する</a>
+
+      <!-- 記事下広告 -->
+      <div class="ad-unit">
+        【広告】記事下のAdSenseコードをここに貼る
+      </div>
+    </article>
+  </main>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <!-- サイドバー広告 -->
+    <div class="sidebar-ad">
+      【広告】<br>サイドバー広告<br>（300×250推奨）<br>AdSenseコードを貼る
+    </div>
+
+    <!-- 人気記事 -->
+    <div class="sidebar-card">
+      <h4>人気記事</h4>
+      <ul>
+        <li><a href="#">記事タイトル1</a></li>
+        <li><a href="#">記事タイトル2</a></li>
+        <li><a href="#">記事タイトル3</a></li>
+        <li><a href="#">記事タイトル4</a></li>
+      </ul>
+    </div>
+
+    <!-- カテゴリー -->
+    <div class="sidebar-card">
+      <h4>カテゴリー</h4>
+      <ul>
+        <li><a href="#">カテゴリーA</a></li>
+        <li><a href="#">カテゴリーB</a></li>
+        <li><a href="#">カテゴリーC</a></li>
+      </ul>
+    </div>
+  </aside>
+</div>
+
+<!-- ===== フッター ===== -->
+<footer>
+  <p>© 2026 サイト名 | <a href="#">プライバシーポリシー</a> | <a href="#">お問い合わせ</a></p>
+  <p style="margin-top:0.5rem;font-size:0.75rem;">※本サイトはアフィリエイト広告を利用しています。</p>
+</footer>
+
 </body>
 </html>
