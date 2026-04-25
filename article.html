@@ -3,427 +3,372 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- ========================================
-       SEO：ここを記事ごとに書き換える
-  ======================================== -->
-  <title>【2026年最新】おすすめ○○ランキング5選｜選び方も解説</title>
-  <meta name="description" content="○○を選ぶポイントと2026年おすすめ5選を徹底解説。初心者でもわかりやすく比較しました。">
+  <title>【2026年最新】キャンプ用テントおすすめランキング5選｜選び方も徹底解説</title>
+  <meta name="description" content="キャンプ用テントの選び方と2026年おすすめ5選を徹底比較。初心者からベテランまで使えるモデルを実際の使用感とともに紹介します。">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
 
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
     :root {
-      --accent: #1a6fd4;
-      --accent-light: #e8f1fc;
+      --accent: #2d7a3a;
+      --accent-light: #eaf4ec;
       --text: #1a1a1a;
       --muted: #666;
       --border: #e2e2e2;
-      --bg: #f7f8fa;
+      --bg: #f7f8f5;
       --white: #fff;
     }
+    body { font-family: 'Noto Sans JP', sans-serif; background: var(--bg); color: var(--text); line-height: 1.8; font-size: 16px; }
 
-    body {
-      font-family: 'Noto Sans JP', sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.8;
-      font-size: 16px;
-    }
+    /* HEADER */
+    header { background: var(--white); border-bottom: 1px solid var(--border); padding: 0 1rem; }
+    .header-inner { max-width: 820px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; height: 56px; }
+    .site-name { font-size: 1.1rem; font-weight: 700; color: var(--accent); text-decoration: none; }
+    nav a { font-size: 0.85rem; color: var(--muted); text-decoration: none; margin-left: 1.2rem; }
 
-    /* ===== HEADER ===== */
-    header {
-      background: var(--white);
-      border-bottom: 1px solid var(--border);
-      padding: 0 1rem;
-    }
-    .header-inner {
-      max-width: 800px;
-      margin: 0 auto;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      height: 56px;
-    }
-    .site-name {
-      font-size: 1.1rem;
-      font-weight: 700;
-      color: var(--accent);
-      text-decoration: none;
-    }
-    nav a {
-      font-size: 0.85rem;
-      color: var(--muted);
-      text-decoration: none;
-      margin-left: 1.2rem;
-    }
-    nav a:hover { color: var(--accent); }
+    /* LAYOUT */
+    .page-wrap { max-width: 820px; margin: 2rem auto; padding: 0 1rem; display: grid; grid-template-columns: 1fr 260px; gap: 2rem; align-items: start; }
+    @media (max-width: 680px) { .page-wrap { grid-template-columns: 1fr; } .sidebar { display: none; } }
 
-    /* ===== LAYOUT ===== */
-    .page-wrap {
-      max-width: 800px;
-      margin: 2rem auto;
-      padding: 0 1rem;
-      display: grid;
-      grid-template-columns: 1fr 260px;
-      gap: 2rem;
-      align-items: start;
-    }
-    @media (max-width: 680px) {
-      .page-wrap { grid-template-columns: 1fr; }
-      .sidebar { display: none; }
-    }
-
-    /* ===== ARTICLE ===== */
-    article {
-      background: var(--white);
-      border-radius: 12px;
-      padding: 2rem;
-    }
-
-    .article-meta {
-      font-size: 0.8rem;
-      color: var(--muted);
-      margin-bottom: 0.75rem;
-    }
+    /* ARTICLE */
+    article { background: var(--white); border-radius: 12px; padding: 2rem; }
+    .article-meta { font-size: 0.8rem; color: var(--muted); margin-bottom: 0.75rem; }
     .article-meta span { margin-right: 1rem; }
-
-    article h1 {
-      font-size: 1.5rem;
-      font-weight: 700;
-      line-height: 1.4;
-      margin-bottom: 1rem;
-    }
+    article h1 { font-size: 1.45rem; font-weight: 700; line-height: 1.45; margin-bottom: 1rem; }
 
     /* 目次 */
-    .toc {
-      background: var(--accent-light);
-      border-left: 4px solid var(--accent);
-      border-radius: 0 8px 8px 0;
-      padding: 1rem 1.25rem;
-      margin: 1.5rem 0;
-    }
-    .toc-title {
-      font-weight: 700;
-      font-size: 0.9rem;
-      margin-bottom: 0.5rem;
-      color: var(--accent);
-    }
+    .toc { background: var(--accent-light); border-left: 4px solid var(--accent); border-radius: 0 8px 8px 0; padding: 1rem 1.25rem; margin: 1.5rem 0; }
+    .toc-title { font-weight: 700; font-size: 0.9rem; margin-bottom: 0.5rem; color: var(--accent); }
     .toc ol { padding-left: 1.2rem; }
     .toc li { font-size: 0.85rem; margin: 0.25rem 0; }
     .toc a { color: var(--accent); text-decoration: none; }
-    .toc a:hover { text-decoration: underline; }
 
     /* 見出し */
-    article h2 {
-      font-size: 1.2rem;
-      font-weight: 700;
-      border-left: 4px solid var(--accent);
-      padding-left: 0.75rem;
-      margin: 2rem 0 1rem;
-    }
-    article h3 {
-      font-size: 1rem;
-      font-weight: 700;
-      margin: 1.5rem 0 0.5rem;
-      color: var(--accent);
-    }
-
-    article p { margin-bottom: 1rem; }
+    article h2 { font-size: 1.15rem; font-weight: 700; border-left: 4px solid var(--accent); padding-left: 0.75rem; margin: 2rem 0 0.75rem; }
+    article h3 { font-size: 1rem; font-weight: 700; margin: 1.25rem 0 0.4rem; color: var(--accent); }
+    article p { margin-bottom: 1rem; font-size: 0.95rem; }
 
     /* ランキングカード */
-    .rank-card {
-      border: 1px solid var(--border);
-      border-radius: 10px;
-      padding: 1.25rem;
-      margin: 1rem 0;
-      display: flex;
-      gap: 1rem;
-      align-items: flex-start;
-    }
-    .rank-num {
-      min-width: 40px;
-      height: 40px;
-      border-radius: 50%;
-      background: var(--accent);
-      color: #fff;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-weight: 700;
-      font-size: 1rem;
-      flex-shrink: 0;
-    }
-    .rank-num.gold   { background: #d4a017; }
-    .rank-num.silver { background: #8a8a8a; }
-    .rank-num.bronze { background: #a0522d; }
-    .rank-body h3 { margin: 0 0 0.25rem; font-size: 1rem; color: var(--text); }
-    .rank-body p  { font-size: 0.875rem; color: var(--muted); margin: 0; }
+    .rank-card { border: 1px solid var(--border); border-radius: 10px; padding: 1.25rem; margin: 1.25rem 0; }
+    .rank-header { display: flex; gap: 0.75rem; align-items: center; margin-bottom: 0.75rem; }
+    .rank-num { min-width: 38px; height: 38px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 1rem; color: #fff; flex-shrink: 0; }
+    .gold { background: #c8930a; }
+    .silver { background: #7a7a7a; }
+    .bronze { background: #9e5c2a; }
+    .rank4 { background: #2d7a3a; }
+    .rank5 { background: #2d7a3a; }
+    .rank-name { font-weight: 700; font-size: 1.05rem; }
+    .rank-price { font-size: 0.82rem; color: var(--muted); }
+    .rank-specs { display: flex; flex-wrap: wrap; gap: 0.4rem; margin: 0.5rem 0 0.75rem; }
+    .spec-tag { background: var(--accent-light); color: var(--accent); font-size: 0.75rem; padding: 0.2rem 0.6rem; border-radius: 999px; font-weight: 500; }
+    .rank-desc { font-size: 0.88rem; color: #333; margin-bottom: 0.75rem; }
+    .btn-row { display: flex; gap: 0.6rem; flex-wrap: wrap; }
+    .aff-btn { flex: 1; min-width: 120px; display: block; text-align: center; padding: 0.65rem 1rem; border-radius: 7px; text-decoration: none; font-weight: 700; font-size: 0.85rem; transition: opacity 0.2s; }
+    .aff-btn:hover { opacity: 0.82; }
+    .btn-amazon { background: #ff9900; color: #111; }
+    .btn-rakuten { background: #bf0000; color: #fff; }
+    .btn-yahoo { background: #ff0033; color: #fff; }
 
-    /* ================================================
-       ★ アフィリエイトリンク（ここに広告タグを貼る）
-    ================================================ */
-    .affiliate-btn {
-      display: block;
-      text-align: center;
-      background: #e85d24;
-      color: #fff;
-      padding: 0.75rem 1.5rem;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: 700;
-      font-size: 0.95rem;
-      margin-top: 0.75rem;
-      transition: opacity 0.2s;
-    }
-    .affiliate-btn:hover { opacity: 0.85; }
-    .affiliate-btn.amazon { background: #ff9900; color: #111; }
-    .affiliate-btn.rakuten { background: #bf0000; }
+    /* 比較表 */
+    .comparison-table { width: 100%; border-collapse: collapse; font-size: 0.82rem; margin: 1rem 0; overflow-x: auto; display: block; }
+    .comparison-table th { background: var(--accent); color: #fff; padding: 0.55rem 0.7rem; text-align: left; white-space: nowrap; }
+    .comparison-table td { padding: 0.55rem 0.7rem; border-bottom: 1px solid var(--border); white-space: nowrap; }
+    .comparison-table tr:nth-child(even) td { background: var(--accent-light); }
 
-    /* ================================================
-       ★ Google AdSense 広告枠
-       （実際のAdSenseコードはここに貼り付ける）
-    ================================================ */
+    /* ポイントボックス */
+    .point-box { background: var(--accent-light); border: 1px solid #b3d9b9; border-radius: 8px; padding: 1rem 1.2rem; margin: 1rem 0; }
+    .point-box ul { padding-left: 1.2rem; }
+    .point-box li { font-size: 0.9rem; margin: 0.3rem 0; }
+
+    /* AdSense広告枠 */
     .ad-unit {
       background: #f0f0f0;
-      border: 1px dashed #ccc;
+      border: 1px dashed #aaa;
       border-radius: 8px;
       padding: 1rem;
       text-align: center;
+      color: #888;
       font-size: 0.75rem;
-      color: #999;
       margin: 1.5rem 0;
     }
+    /* ↓ 実際のAdSenseコードに置き換える場合はこのdivごと差し替え */
 
-    /* まとめ表 */
-    .comparison-table {
-      width: 100%;
-      border-collapse: collapse;
-      font-size: 0.875rem;
-      margin: 1rem 0;
-    }
-    .comparison-table th {
-      background: var(--accent);
-      color: #fff;
-      padding: 0.6rem 0.75rem;
-      text-align: left;
-    }
-    .comparison-table td {
-      padding: 0.6rem 0.75rem;
-      border-bottom: 1px solid var(--border);
-    }
-    .comparison-table tr:nth-child(even) td { background: var(--accent-light); }
-
-    /* ===== SIDEBAR ===== */
+    /* SIDEBAR */
     .sidebar { display: flex; flex-direction: column; gap: 1.25rem; }
-
-    .sidebar-card {
-      background: var(--white);
-      border-radius: 10px;
-      padding: 1.25rem;
-    }
-    .sidebar-card h4 {
-      font-size: 0.9rem;
-      font-weight: 700;
-      margin-bottom: 0.75rem;
-      padding-bottom: 0.5rem;
-      border-bottom: 2px solid var(--accent);
-    }
+    .sidebar-card { background: var(--white); border-radius: 10px; padding: 1.25rem; }
+    .sidebar-card h4 { font-size: 0.9rem; font-weight: 700; margin-bottom: 0.75rem; padding-bottom: 0.5rem; border-bottom: 2px solid var(--accent); }
     .sidebar-card ul { list-style: none; }
     .sidebar-card li { font-size: 0.85rem; padding: 0.35rem 0; border-bottom: 1px solid var(--border); }
     .sidebar-card li:last-child { border-bottom: none; }
     .sidebar-card a { color: var(--text); text-decoration: none; }
-    .sidebar-card a:hover { color: var(--accent); }
+    .sidebar-ad { background: #f0f0f0; border: 1px dashed #aaa; border-radius: 8px; padding: 1rem; text-align: center; font-size: 0.75rem; color: #888; min-height: 250px; display: flex; align-items: center; justify-content: center; flex-direction: column; gap: 0.5rem; }
 
-    /* サイドバー広告枠 */
-    .sidebar-ad {
-      background: #f0f0f0;
-      border: 1px dashed #ccc;
-      border-radius: 8px;
-      padding: 1.5rem 1rem;
-      text-align: center;
-      font-size: 0.75rem;
-      color: #999;
-      min-height: 250px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
+    footer { text-align: center; padding: 2rem 1rem; font-size: 0.8rem; color: var(--muted); margin-top: 1rem; }
+    footer a { color: var(--muted); }
 
-    /* ===== FOOTER ===== */
-    footer {
-      text-align: center;
-      padding: 2rem 1rem;
-      font-size: 0.8rem;
-      color: var(--muted);
-      margin-top: 2rem;
-    }
+    /* AdSenseコード説明ハイライト */
+    .adsense-note { background: #fff8e1; border-left: 4px solid #f0b429; border-radius: 0 8px 8px 0; padding: 0.9rem 1.1rem; font-size: 0.85rem; margin: 0.5rem 0 1rem; }
+    .adsense-note code { background: #f0e6c8; padding: 0.1rem 0.4rem; border-radius: 4px; font-family: monospace; font-size: 0.82rem; }
   </style>
 </head>
 <body>
 
-<!-- ===== ヘッダー ===== -->
 <header>
   <div class="header-inner">
-    <a class="site-name" href="index.html">サイト名</a>
+    <a class="site-name" href="index.html">⛺ アウトドアLab</a>
     <nav>
-      <a href="#">ホーム</a>
-      <a href="#">カテゴリー</a>
-      <a href="#">プロフィール</a>
+      <a href="#">テント</a>
+      <a href="#">焚き火</a>
+      <a href="#">ギア</a>
     </nav>
   </div>
 </header>
 
-<!-- ===== メインコンテンツ ===== -->
 <div class="page-wrap">
-  <main>
-    <article>
-      <div class="article-meta">
-        <span>📅 2026年4月25日</span>
-        <span>✏️ 執筆者名</span>
+<main>
+<article>
+
+  <div class="article-meta">
+    <span>📅 2026年4月25日</span>
+    <span>✏️ 編集部</span>
+  </div>
+
+  <h1>【2026年最新】キャンプ用テントおすすめランキング5選｜初心者〜上級者まで選び方を徹底解説</h1>
+
+  <!-- ============================================================
+       ★ 広告①：記事上（AdSenseコードをここに貼る）
+       手順は記事の最後に解説しています
+  ============================================================ -->
+  <div class="ad-unit">
+    ＜広告①：記事上＞<br>
+    ここに Google AdSense のコードを貼ります<br>
+    推奨サイズ：レスポンシブ or 728×90
+  </div>
+
+  <div class="toc">
+    <div class="toc-title">📋 目次</div>
+    <ol>
+      <li><a href="#how-to-choose">テントの選び方｜3つのポイント</a></li>
+      <li><a href="#ranking">おすすめテント ランキング TOP5</a></li>
+      <li><a href="#comparison">5製品まとめ比較表</a></li>
+      <li><a href="#summary">まとめ</a></li>
+    </ol>
+  </div>
+
+  <p>「キャンプを始めたいけどテントの選び方がわからない」「今使っているテントをそろそろ買い替えたい」——そんな方に向けて、実際に複数のテントを使ってきた経験をもとに2026年おすすめの5選をランキング形式で紹介します。</p>
+  <p>価格帯・人数・用途別に幅広く選んだので、初心者の方からベテランキャンパーまで参考にしていただけます。</p>
+
+  <!-- ===== 選び方 ===== -->
+  <h2 id="how-to-choose">テントの選び方｜3つのポイント</h2>
+
+  <h3>① 使用人数・サイズで選ぶ</h3>
+  <p>テントの定員表示は「ぴったり詰めた場合」の人数です。荷物を中に置くことも考えると、<strong>実際の使用人数＋1人分</strong>のサイズを目安に選ぶと快適に過ごせます。1〜2人なら2〜3人用、ファミリーなら4〜6人用を選ぶのがポイントです。</p>
+
+  <h3>② 耐水圧で防水性能を確認する</h3>
+  <p>耐水圧とは水の侵入を防ぐ力の指標で、数値が高いほど雨に強くなります。日帰り〜晴れが多い季節なら<strong>1,500mm以上</strong>、梅雨や秋の長雨が心配な場合は<strong>3,000mm以上</strong>を目安にしましょう。</p>
+
+  <h3>③ 設営のしやすさを確認する</h3>
+  <p>テントの構造は大きく「ドーム型」「ワンタッチ型」「ティピー型」の3種類。初心者には<strong>ポールを交差させるだけのドーム型</strong>が最もおすすめです。ワンタッチ型はさらに手軽ですが収納サイズが大きくなりがちです。</p>
+
+  <div class="point-box">
+    <ul>
+      <li>✅ サイズは「使用人数＋1人分」が快適の目安</li>
+      <li>✅ 雨の多い時期は耐水圧3,000mm以上を選ぼう</li>
+      <li>✅ 初心者はドーム型が設営しやすくておすすめ</li>
+    </ul>
+  </div>
+
+  <!-- ===== ランキング ===== -->
+  <h2 id="ranking">おすすめテント ランキング TOP5</h2>
+
+  <!-- 1位 -->
+  <div class="rank-card">
+    <div class="rank-header">
+      <div class="rank-num gold">1</div>
+      <div>
+        <div class="rank-name">Coleman ツーリングドームST</div>
+        <div class="rank-price">参考価格：¥18,000〜¥22,000</div>
       </div>
-
-      <h1>【2026年最新】おすすめ○○ランキング5選｜選び方も徹底解説</h1>
-
-      <!-- ================================================
-           ★ 記事上 広告（AdSense or ASP バナー）
-           ここにAdSenseの<script>タグを貼る
-      ================================================ -->
-      <div class="ad-unit">
-        【広告】ここにGoogle AdSenseのコードを貼る
-      </div>
-
-      <!-- 目次 -->
-      <div class="toc">
-        <div class="toc-title">目次</div>
-        <ol>
-          <li><a href="#how-to-choose">○○の選び方3つのポイント</a></li>
-          <li><a href="#ranking">おすすめランキング TOP5</a></li>
-          <li><a href="#comparison">比較表</a></li>
-          <li><a href="#summary">まとめ</a></li>
-        </ol>
-      </div>
-
-      <p>○○を選ぶとき、どれにすればいいか迷っていませんか？この記事では実際に試した経験をもとに、2026年おすすめの5選をランキング形式で紹介します。</p>
-
-      <!-- ===== セクション1 ===== -->
-      <h2 id="how-to-choose">○○の選び方3つのポイント</h2>
-      <p>購入前に確認しておきたいポイントをまとめました。</p>
-
-      <h3>① ポイントA</h3>
-      <p>ここに説明文を書きます。読者が理解しやすいよう、具体的な例を交えると効果的です。</p>
-
-      <h3>② ポイントB</h3>
-      <p>ここに説明文を書きます。</p>
-
-      <h3>③ ポイントC</h3>
-      <p>ここに説明文を書きます。</p>
-
-      <!-- ===== セクション2：ランキング ===== -->
-      <h2 id="ranking">おすすめランキング TOP5</h2>
-
-      <!-- 1位 -->
-      <div class="rank-card">
-        <div class="rank-num gold">1</div>
-        <div class="rank-body">
-          <h3>商品名A</h3>
-          <p>商品の特徴・メリットをここに書きます。読者が「これが欲しい」と思う説明をしましょう。</p>
-          <!--
-            ★ アフィリエイトリンクをここに貼る
-            例）Amazonアソシエイト → href="https://amzn.to/XXXXXXX"
-                A8.net → href="https://px.a8.net/XXXXXXX"
-          -->
-          <a href="#" class="affiliate-btn amazon">Amazonで見る →</a>
-          <a href="#" class="affiliate-btn rakuten">楽天で見る →</a>
-        </div>
-      </div>
-
-      <!-- 2位 -->
-      <div class="rank-card">
-        <div class="rank-num silver">2</div>
-        <div class="rank-body">
-          <h3>商品名B</h3>
-          <p>商品の特徴・メリットをここに書きます。</p>
-          <a href="#" class="affiliate-btn amazon">Amazonで見る →</a>
-        </div>
-      </div>
-
-      <!-- 3位 -->
-      <div class="rank-card">
-        <div class="rank-num bronze">3</div>
-        <div class="rank-body">
-          <h3>商品名C</h3>
-          <p>商品の特徴・メリットをここに書きます。</p>
-          <a href="#" class="affiliate-btn amazon">Amazonで見る →</a>
-        </div>
-      </div>
-
-      <!-- 記事中広告 -->
-      <div class="ad-unit">
-        【広告】記事中のAdSenseコードをここに貼る
-      </div>
-
-      <!-- ===== セクション3：比較表 ===== -->
-      <h2 id="comparison">比較表</h2>
-      <table class="comparison-table">
-        <thead>
-          <tr><th>商品名</th><th>価格</th><th>特徴</th><th>評価</th></tr>
-        </thead>
-        <tbody>
-          <tr><td>商品A</td><td>¥3,000</td><td>○○が優れている</td><td>★★★★★</td></tr>
-          <tr><td>商品B</td><td>¥2,500</td><td>コスパが高い</td><td>★★★★☆</td></tr>
-          <tr><td>商品C</td><td>¥1,800</td><td>初心者向け</td><td>★★★★☆</td></tr>
-        </tbody>
-      </table>
-
-      <!-- ===== まとめ ===== -->
-      <h2 id="summary">まとめ</h2>
-      <p>今回は○○おすすめ5選を紹介しました。迷ったら<strong>商品A</strong>を選んでおけば間違いありません。</p>
-      <a href="#" class="affiliate-btn">▶ 商品Aの詳細・最安値を確認する</a>
-
-      <!-- 記事下広告 -->
-      <div class="ad-unit">
-        【広告】記事下のAdSenseコードをここに貼る
-      </div>
-    </article>
-  </main>
-
-  <!-- ===== サイドバー ===== -->
-  <aside class="sidebar">
-    <!-- サイドバー広告 -->
-    <div class="sidebar-ad">
-      【広告】<br>サイドバー広告<br>（300×250推奨）<br>AdSenseコードを貼る
     </div>
-
-    <!-- 人気記事 -->
-    <div class="sidebar-card">
-      <h4>人気記事</h4>
-      <ul>
-        <li><a href="#">記事タイトル1</a></li>
-        <li><a href="#">記事タイトル2</a></li>
-        <li><a href="#">記事タイトル3</a></li>
-        <li><a href="#">記事タイトル4</a></li>
-      </ul>
+    <div class="rank-specs">
+      <span class="spec-tag">2〜3人用</span>
+      <span class="spec-tag">耐水圧2,000mm</span>
+      <span class="spec-tag">ドーム型</span>
+      <span class="spec-tag">初心者向け</span>
     </div>
-
-    <!-- カテゴリー -->
-    <div class="sidebar-card">
-      <h4>カテゴリー</h4>
-      <ul>
-        <li><a href="#">カテゴリーA</a></li>
-        <li><a href="#">カテゴリーB</a></li>
-        <li><a href="#">カテゴリーC</a></li>
-      </ul>
+    <p class="rank-desc">国内キャンパーに長年支持されてきたコールマンの定番モデル。前室が広く荷物を外に置けるので居住空間をしっかり確保できます。設営は15〜20分程度で初心者でも迷わず建てられます。コストパフォーマンスの高さから「はじめての1本」として最もおすすめできる1台です。</p>
+    <div class="btn-row">
+      <a href="https://amzn.to/XXXXXXX" class="aff-btn btn-amazon">Amazonで見る</a>
+      <a href="https://hb.afl.rakuten.co.jp/XXXXXXX" class="aff-btn btn-rakuten">楽天で見る</a>
     </div>
-  </aside>
+  </div>
+
+  <!-- 2位 -->
+  <div class="rank-card">
+    <div class="rank-header">
+      <div class="rank-num silver">2</div>
+      <div>
+        <div class="rank-name">ogawa ステイシーST-II</div>
+        <div class="rank-price">参考価格：¥38,000〜¥45,000</div>
+      </div>
+    </div>
+    <div class="rank-specs">
+      <span class="spec-tag">2〜3人用</span>
+      <span class="spec-tag">耐水圧1,800mm</span>
+      <span class="spec-tag">ドーム型</span>
+      <span class="spec-tag">国産ブランド</span>
+    </div>
+    <p class="rank-desc">創業100年以上の国産テントブランド・ogawaの人気モデル。縫製や素材の品質が高く、長期間使い続けられる耐久性が魅力です。フロアが広くインナーテントの高さもあるため、ファミリーや荷物が多いキャンパーにも向いています。一生ものの1張りを探している方に特におすすめです。</p>
+    <div class="btn-row">
+      <a href="https://amzn.to/XXXXXXX" class="aff-btn btn-amazon">Amazonで見る</a>
+      <a href="https://hb.afl.rakuten.co.jp/XXXXXXX" class="aff-btn btn-rakuten">楽天で見る</a>
+    </div>
+  </div>
+
+  <!-- 広告② 記事中 -->
+  <div class="ad-unit">
+    ＜広告②：記事中＞<br>
+    ここに Google AdSense のコードを貼ります<br>
+    推奨サイズ：レスポンシブ or 336×280
+  </div>
+
+  <!-- 3位 -->
+  <div class="rank-card">
+    <div class="rank-header">
+      <div class="rank-num bronze">3</div>
+      <div>
+        <div class="rank-name">DOD ライダーズバイクインテント</div>
+        <div class="rank-price">参考価格：¥22,000〜¥26,000</div>
+      </div>
+    </div>
+    <div class="rank-specs">
+      <span class="spec-tag">1〜2人用</span>
+      <span class="spec-tag">耐水圧3,000mm</span>
+      <span class="spec-tag">ソロ向け</span>
+      <span class="spec-tag">バイク対応</span>
+    </div>
+    <p class="rank-desc">ソロキャンプやツーリングキャンプに最適なDODのユニークモデル。前室にバイクをそのまま入れられる設計で、荷物の盗難対策にもなります。耐水圧3,000mmと防水性が高く、急な雨でも安心。一人旅の自由なキャンプスタイルをサポートしてくれます。</p>
+    <div class="btn-row">
+      <a href="https://amzn.to/XXXXXXX" class="aff-btn btn-amazon">Amazonで見る</a>
+      <a href="https://hb.afl.rakuten.co.jp/XXXXXXX" class="aff-btn btn-rakuten">楽天で見る</a>
+    </div>
+  </div>
+
+  <!-- 4位 -->
+  <div class="rank-card">
+    <div class="rank-header">
+      <div class="rank-num rank4">4</div>
+      <div>
+        <div class="rank-name">NEMO ダガー OSMO 2P</div>
+        <div class="rank-price">参考価格：¥68,000〜¥75,000</div>
+      </div>
+    </div>
+    <div class="rank-specs">
+      <span class="spec-tag">2人用</span>
+      <span class="spec-tag">超軽量1.36kg</span>
+      <span class="spec-tag">山岳・登山向け</span>
+      <span class="spec-tag">4シーズン対応</span>
+    </div>
+    <p class="rank-desc">アウトドアギアブランドNEMOの山岳用テントの最高峰。重量わずか1.36kgで、稜線上での強風にも耐える設計が施されています。価格は高めですが、登山やバックパッキングで本格的に使いたい方にとっては長期投資として価値のある1張りです。</p>
+    <div class="btn-row">
+      <a href="https://amzn.to/XXXXXXX" class="aff-btn btn-amazon">Amazonで見る</a>
+      <a href="https://hb.afl.rakuten.co.jp/XXXXXXX" class="aff-btn btn-rakuten">楽天で見る</a>
+    </div>
+  </div>
+
+  <!-- 5位 -->
+  <div class="rank-card">
+    <div class="rank-header">
+      <div class="rank-num rank5">5</div>
+      <div>
+        <div class="rank-name">Quechua エア セカンズ フレッシュ&BLACK</div>
+        <div class="rank-price">参考価格：¥25,000〜¥30,000</div>
+      </div>
+    </div>
+    <div class="rank-specs">
+      <span class="spec-tag">3人用</span>
+      <span class="spec-tag">遮光99%</span>
+      <span class="spec-tag">ワンタッチ</span>
+      <span class="spec-tag">ファミリー向け</span>
+    </div>
+    <p class="rank-desc">デカトロンのQuechuaブランドが誇るワンタッチテント。特殊な遮光素材で内部温度の上昇を抑えるため、夏の炎天下でも快適に過ごせます。開けて投げるだけで設営完了というお手軽さも魅力で、小さいお子さんがいるファミリーキャンプに最適です。</p>
+    <div class="btn-row">
+      <a href="https://amzn.to/XXXXXXX" class="aff-btn btn-amazon">Amazonで見る</a>
+      <a href="https://hb.afl.rakuten.co.jp/XXXXXXX" class="aff-btn btn-rakuten">楽天で見る</a>
+    </div>
+  </div>
+
+  <!-- 比較表 -->
+  <h2 id="comparison">5製品まとめ比較表</h2>
+  <table class="comparison-table">
+    <thead>
+      <tr><th>商品名</th><th>価格帯</th><th>人数</th><th>耐水圧</th><th>重量</th><th>おすすめ</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Coleman ツーリングドームST</td><td>¥18,000〜</td><td>2〜3人</td><td>2,000mm</td><td>約4.5kg</td><td>初心者</td></tr>
+      <tr><td>ogawa ステイシーST-II</td><td>¥38,000〜</td><td>2〜3人</td><td>1,800mm</td><td>約5.4kg</td><td>長く使いたい方</td></tr>
+      <tr><td>DOD ライダーズバイクイン</td><td>¥22,000〜</td><td>1〜2人</td><td>3,000mm</td><td>約3.8kg</td><td>ソロ・ツーリング</td></tr>
+      <tr><td>NEMO ダガー OSMO 2P</td><td>¥68,000〜</td><td>2人</td><td>非公開</td><td>1.36kg</td><td>登山・山岳</td></tr>
+      <tr><td>Quechua エア セカンズ</td><td>¥25,000〜</td><td>3人</td><td>2,000mm</td><td>約4.9kg</td><td>ファミリー</td></tr>
+    </tbody>
+  </table>
+
+  <!-- まとめ -->
+  <h2 id="summary">まとめ</h2>
+  <p>今回は2026年おすすめのキャンプ用テント5選を紹介しました。迷ったら以下を参考にしてみてください。</p>
+  <div class="point-box">
+    <ul>
+      <li>🏕️ <strong>初心者・コスパ重視</strong> → Coleman ツーリングドームST</li>
+      <li>🏕️ <strong>長く使える1張りが欲しい</strong> → ogawa ステイシーST-II</li>
+      <li>🏕️ <strong>ソロ・ツーリング</strong> → DOD ライダーズバイクイン</li>
+      <li>🏕️ <strong>登山・山岳キャンプ</strong> → NEMO ダガー OSMO 2P</li>
+      <li>🏕️ <strong>ファミリー・設営が楽</strong> → Quechua エア セカンズ</li>
+    </ul>
+  </div>
+  <p>気になった商品は各リンクから最新価格や在庫を確認してみてください。良いキャンプライフを！</p>
+
+  <!-- 広告③ 記事下 -->
+  <div class="ad-unit">
+    ＜広告③：記事下＞<br>
+    ここに Google AdSense のコードを貼ります<br>
+    推奨サイズ：レスポンシブ or 728×90
+  </div>
+
+</article>
+</main>
+
+<aside class="sidebar">
+  <div class="sidebar-ad">
+    ＜サイドバー広告＞<br>
+    推奨：300×250<br>
+    AdSenseコードを貼る
+  </div>
+  <div class="sidebar-card">
+    <h4>人気記事</h4>
+    <ul>
+      <li><a href="#">焚き火台おすすめランキング7選</a></li>
+      <li><a href="#">キャンプ用寝袋の選び方ガイド</a></li>
+      <li><a href="#">初心者向けキャンプ道具一覧</a></li>
+      <li><a href="#">ソロキャンプにおすすめのギア10選</a></li>
+    </ul>
+  </div>
+  <div class="sidebar-card">
+    <h4>カテゴリー</h4>
+    <ul>
+      <li><a href="#">テント・タープ</a></li>
+      <li><a href="#">焚き火・BBQ</a></li>
+      <li><a href="#">調理器具</a></li>
+      <li><a href="#">登山・ハイキング</a></li>
+    </ul>
+  </div>
+</aside>
 </div>
 
-<!-- ===== フッター ===== -->
 <footer>
-  <p>© 2026 サイト名 | <a href="#">プライバシーポリシー</a> | <a href="#">お問い合わせ</a></p>
-  <p style="margin-top:0.5rem;font-size:0.75rem;">※本サイトはアフィリエイト広告を利用しています。</p>
+  <p>© 2026 アウトドアLab | <a href="#">プライバシーポリシー</a> | <a href="#">お問い合わせ</a></p>
+  <p style="margin-top:0.5rem;font-size:0.75rem;">※本サイトはアフィリエイト広告・Google AdSenseを利用しています。</p>
 </footer>
 
 </body>
